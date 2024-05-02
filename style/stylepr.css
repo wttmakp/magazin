@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #fff;
+}
+
+.product-card {
+  display: flex;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.product-images {
+  margin-right: 20px;
+}
+
+.product-images img {
+  width: 250px;
+  height: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h1 {
+  font-size: 24px;
+}
+
+.product-info p {
+  font-size: 16px;
+}
+
+.reviews {
+  margin-top: 20px;
+}
+
+.reviews ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.add-review {
+  margin-top: 20px;
+}
+
+.add-review textarea {
+  width: 50%;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.add-review button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-review button:hover {
+  background-color: #45a049;
+}
+
+/* Увеличение изображения при наведении */
+.thumbnail:hover {
+  transform: scale(1.2);
+}
