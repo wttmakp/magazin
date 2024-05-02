@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карточка товара</title>
+    <link rel="stylesheet" href="style/stylepr.css" />
+  </head>
+  <body>
+    <div class="product-card">
+      <div class="product-images">
+        <img
+          src="images/18.jpg"
+          alt="Image 1"
+          class="thumbnail"
+          onclick="showImage('images/16.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        <img
+          src="images/181.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="showImage('images/161.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        <img
+          src="images/182.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="showImage('images/42.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        
+      </div>
+      <div class="product-info">
+        <h1>Цена: 905 р.</h1>
+        <h1>Блузка офисная весенняя с длинным рукавом</h1>
+        <p> Блузка женская - это классика, которая является универсальной одеждой для всех возрастов и стилей! Каждая женщина мечтает о том, чтобы иметь в своем гардеробе идеальную блузку, которая подчеркнет ее индивидуальный стиль и придаст образу женственности и элегантности. Новинки кофточек с рукавами фонарь мода сезона 2024 - идеальное решение для девушек - подростков, будущих и кормящих мамочек. Молодежная блуза из полотна в рубчик с шифоновыми объемными рукавами на трикотажном манжете подчеркнет вашу женственность и создаст неповторимый стильный образ. Все это благодаря уникальному сочетанию дизайна и качества!
+        </p><div class="reviews">
+          <h2>Отзывы:</h2>
+          <ul>
+            <li><h5>Марина</h5>
+            <p>ЗКачество очень понравилось . Смотрится стильно и ярко . Можно и в кафе и на работу .
+            </p></li>
+            <li><h5>Покупатель</h5>
+            <p>Качество и размер соответствует завленным в характеристике. Два раза стирала не села и не вытянулась.</p></li>
+           <li><h5>Покупатель</h5>
+            <p>Блузка очень хорошая, рекомендую. А резинка которая шла в подарок. Все шикарно , спасибо</p></li>
+          </ul>
+        </div>
+        <div class="add-review">
+          <h2>Оставить отзыв:</h2>
+          <form>
+            <textarea placeholder="Введите ваш отзыв здесь"></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+          </div>
+    <button onclick="goBack()" class="back-button">Назад</button>
+  </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        function goBack() {
+      window.history.back();
+    }
+      function showImage(image) {
+        // Отображение выбранного изображения
+      }
+
+      function zoomIn(element) {
+        // Увеличение изображения при наведении
+        element.style.transform = "scale(1.2)";
+      }
+
+      function zoomOut(element) {
+        // Уменьшение изображения при уходе мыши с него
+        element.style.transform = "scale(1)";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карточка товара</title>
+    <link rel="stylesheet" href="style/stylepr.css" />
+  </head>
+  <body>
+    <div class="product-card">
+      <div class="product-images">
+        <img
+          src="images/20.jpg"
+          alt="Image 1"
+          class="thumbnail"
+          onclick="showImage('images/4.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        <img
+          src="images/201.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="showImage('images/41.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        <img
+          src="images/202.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="showImage('images/42.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        
+      </div>
+      <div class="product-info">
+        <h1>Цена: 700 р.</h1>
+        <h1>Куртка для мальчиков с капюшоном демисезонная из мембраны</h1>
+        <p> Демисезонная куртка sela для мальчиков, выполненная из прочной технологичной ткани таслан с мембраной SelaDryTex и водоотталкивающей и грязеотталкивающей эко пропиткой без содержания фторуглеродов, что делает ее экологически безопасной и удобной в уходе. Свободный крой с длинными рукавами позволяет сочетать модель с любым комплектом, сохраняя при этом комфорт и свободу движения. 
+        </p><div class="reviews">
+          <h2>Отзывы:</h2>
+          <ul>
+            <li><h5>Марина</h5>
+            <p>Куртка хорошая,ребенку понравилось
+            </p></li>
+            <li><h5>Покупатель</h5>
+            <p>Брала на двухлетку размером 86-92, снизу резинкой затянула и отлично сел размер 98. Ну свободно, да. Но зато на осень влезем. В первый же день носки сын кубарем покатался в на грязном асфальте (тогда еще слякотном от тающего снега) и ничего, я даже не стирала просто тряпочкой протерла, получается что действительно грязеотталкивающий.</p></li>
+           <li><h5>Покупатель</h5>
+            <p>Рубашка хорошего качества, цвет насыщенный, идёт в размер. Мужу понравилась взяли на юбилей. Спасибо продавцу.</p></li>
+          </ul>
+        </div>
+        <div class="add-review">
+          <h2>Оставить отзыв:</h2>
+          <form>
+            <textarea placeholder="Введите ваш отзыв здесь"></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+          </div>
+    <button onclick="goBack()" class="back-button">Назад</button>
+  </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        function goBack() {
+      window.history.back();
+    }
+      function showImage(image) {
+        // Отображение выбранного изображения
+      }
+
+      function zoomIn(element) {
+        // Увеличение изображения при наведении
+        element.style.transform = "scale(1.2)";
+      }
+
+      function zoomOut(element) {
+        // Уменьшение изображения при уходе мыши с него
+        element.style.transform = "scale(1)";
+      }
+    </script>
+  </body>
+</html>

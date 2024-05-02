@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карточка товара</title>
+    <link rel="stylesheet" href="style/stylepr.css" />
+  </head>
+  <body>
+    <div class="product-card">
+      <div class="product-images">
+        <img
+          src="images/8.jpg"
+          alt="Image 1"
+          class="thumbnail"
+          onclick="showImage('images/8.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        <img
+          src="images/81.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="showImage('images/81.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        <img
+          src="images/82.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="showImage('images/82.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        
+      </div>
+      <div class="product-info">
+        <h1>Цена: 2800 р.</h1>
+        <h1>Брюки бананы классические оверсайз пояс на резинке</h1>
+        <p>Бананы мужские в офис в школу классические черные. Повседневные черные штаны для мужчин и школьные для подростковые. Наши тканевые брюки джоггеры станут отличным дополнением весеннего и летнего гардероба. Легкие молодежные олдмани с резинкой на поясе станут основой гардероба модного студента. Стильные old money кэжуал для создания повседневных и вечерних образов. </p>
+        <div class="reviews">
+          <h2>Отзывы:</h2>
+          <ul>
+            <li><h5>Марина</h5>
+            <p>Вроде неплохие штаны, смотрятся классно, сшиты качественно, легкие, удобные, выглядят хорошо, рекомендую! Спасибо магазину</p></li>
+            <li><h5>Покупатель</h5>
+            <p>Качество хорошее,спасибо продавцу</p></li>
+           <li><h5>Покупатель</h5>
+            <p>Оч крутой фасон, приятная ткань. Размер подошёл идеально. Спасибо</p></li>
+          </ul>
+        </div>
+        <div class="add-review">
+          <h2>Оставить отзыв:</h2>
+          <form>
+            <textarea placeholder="Введите ваш отзыв здесь"></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+          </div>
+    <button onclick="goBack()" class="back-button">Назад</button>
+  </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        function goBack() {
+      window.history.back();
+    }
+      function showImage(image) {
+        // Отображение выбранного изображения
+      }
+
+      function zoomIn(element) {
+        // Увеличение изображения при наведении
+        element.style.transform = "scale(1.2)";
+      }
+
+      function zoomOut(element) {
+        // Уменьшение изображения при уходе мыши с него
+        element.style.transform = "scale(1)";
+      }
+    </script>
+  </body>
+</html>

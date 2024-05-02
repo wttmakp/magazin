@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карточка товара</title>
+    <link rel="stylesheet" href="style/stylepr.css" />
+  </head>
+  <body>
+    <div class="product-card">
+      <div class="product-images">
+        <img
+          src="images/13.jpg"
+          alt="Image 1"
+          class="thumbnail"
+          onclick="showImage('images/4.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        <img
+          src="images/131.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="showImage('images/41.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        <img
+          src="images/132.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="showImage('images/42.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        
+      </div>
+      <div class="product-info">
+        <h1>Цена: 2500 р.</h1>
+        <h1>РЮбка миди атласная</h1>
+        <p> Почувствуйте непревзойденную роскошь и элегантность в нашей шелковой юбке миди! Побалуйте себя этой ослепительной атласной юбкой, которая станет жемчужиной вашего гардероба. Сшитая из струящейся и нежной ткани, она нежно облегает вашу фигуру, создавая изысканный и женственный силуэт также за счет кроя по косой. Эластичная резинка и молния на талии обеспечивает идеальную посадку без скованности. Шелковая ткань юбки макси придает роскошный и элегантный вид. Идеально подходит для: Вечерних выходов и особых случаев. Офисных будней и деловых встреч.
+        </p><div class="reviews">
+          <h2>Отзывы:</h2>
+          <ul>
+            <li><h5>Марина</h5>
+            <p>Идеальная
+            </p></li>
+            <li><h5>Покупатель</h5>
+            <p>ТВыбирала из несколько других подобных моделей. Остановила свой выбор именно на этой. Ткань выглядит очень дорого и красиво сшита. Рисует некий силует. По качеству действительно вышка, особенно по сравнению с другими юбками.</p></li>
+           <li><h5>Покупатель</h5>
+            <p>Выбирала из несколько других подобных моделей. Остановила свой выбор именно на этой. Ткань выглядит очень дорого и красиво сшита. Рисует некий силует. По качеству действительно вышка, особенно по сравнению с другими юбками.</p></li>
+          </ul>
+        </div>
+        <div class="add-review">
+          <h2>Оставить отзыв:</h2>
+          <form>
+            <textarea placeholder="Введите ваш отзыв здесь"></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+          </div>
+    <button onclick="goBack()" class="back-button">Назад</button>
+  </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        function goBack() {
+      window.history.back();
+    }
+      function showImage(image) {
+        // Отображение выбранного изображения
+      }
+
+      function zoomIn(element) {
+        // Увеличение изображения при наведении
+        element.style.transform = "scale(1.2)";
+      }
+
+      function zoomOut(element) {
+        // Уменьшение изображения при уходе мыши с него
+        element.style.transform = "scale(1)";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карточка товара</title>
+    <link rel="stylesheet" href="style/stylepr.css" />
+  </head>
+  <body>
+    <div class="product-card">
+      <div class="product-images">
+        <img
+          src="images/14.jpg"
+          alt="Image 1"
+          class="thumbnail"
+          onclick="showImage('images/4.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        <img
+          src="images/141.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="showImage('images/41.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        <img
+          src="images/142.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="showImage('images/42.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        
+      </div>
+      <div class="product-info">
+        <h1>Цена: 2100 р.</h1>
+        <h1>Юбка мини джинсовая трапеция</h1>
+        <p>Юбочка с отрезной фигурной кокеткой. Женская джинсовая мини-юбка - это идеальное решение для летнего образа на выпускной в школе или на танцах. Она подойдет как для подростков, так и для женщин разных размеров - от детской до полной и беременной. Стильная, свободная миниюбка имеет трапециевидный силуэт. Эта mini юбка также отлично подойдет для похода на пляж или игры в теннис. Наша юбка - это классическая одежда, которая подходит для разных ситуаций - от школы до офиса. Она легко сочетается с разными вещами, создавая различные образы - от стильной спортивной до элегантной офисной и эротическая танцевальная. 
+        </p><div class="reviews">
+          <h2>Отзывы:</h2>
+          <ul>
+            <li><h5>Марина</h5>
+            <p>Юбка крутая, заказывала черную 44, село идеально Сейчас заказала джинсовую, 44 сваливается, 42 еле застегнула. Пришлось отказаться
+            </p></li>
+            <li><h5>Покупатель</h5>
+            <p>Офигенная юбка! Очень понравилось как села, ткань плотная, рюши форму держат</p></li>
+           <li><h5>Покупатель</h5>
+            <p>Юбка - огонь.</p></li>
+          </ul>
+        </div>
+        <div class="add-review">
+          <h2>Оставить отзыв:</h2>
+          <form>
+            <textarea placeholder="Введите ваш отзыв здесь"></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+          </div>
+    <button onclick="goBack()" class="back-button">Назад</button>
+  </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        function goBack() {
+      window.history.back();
+    }
+      function showImage(image) {
+        // Отображение выбранного изображения
+      }
+
+      function zoomIn(element) {
+        // Увеличение изображения при наведении
+        element.style.transform = "scale(1.2)";
+      }
+
+      function zoomOut(element) {
+        // Уменьшение изображения при уходе мыши с него
+        element.style.transform = "scale(1)";
+      }
+    </script>
+  </body>
+</html>

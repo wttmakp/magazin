@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карточка товара</title>
+    <link rel="stylesheet" href="style/stylepr.css" />
+  </head>
+  <body>
+    <div class="product-card">
+      <div class="product-images">
+        <img
+          src="images/16.jpg"
+          alt="Image 1"
+          class="thumbnail"
+          onclick="showImage('images/4.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        <img
+          src="images/161.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="showImage('images/41.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        <img
+          src="images/162.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="showImage('images/42.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        
+      </div>
+      <div class="product-info">
+        <h1>Цена: 1555 р.</h1>
+        <h1>Блузка белая в офис и вечерняя</h1>
+        <p> CБелая женская блузка, которая подходит как и для офиса, так и для вечернего выхода. Рубашку можно носить как со спущенными плечами, так и с поднятыми. Спереди блуза декорирована пуговицами в тон ткани изделия. Особенностью белой кофточки являются объемные рукава. Для создания романтичного образа вам необходимо лишь опустить рукава блузки.
+        </p><div class="reviews">
+          <h2>Отзывы:</h2>
+          <ul>
+            <li><h5>Марина</h5>
+            <p>Блузка шикарная! Приятная ткань, качественный пошив. Пожрйдет под любой образ. Рекомендую.
+            </p></li>
+            <li><h5>Покупатель</h5>
+            <p>Данная модель совсем не соответствует описанию. Очень короткая, ну очень коротко. Не подошла</p></li>
+           <li><h5>Покупатель</h5>
+            <p>Очень нежная и женственная)</p></li>
+          </ul>
+        </div>
+        <div class="add-review">
+          <h2>Оставить отзыв:</h2>
+          <form>
+            <textarea placeholder="Введите ваш отзыв здесь"></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+          </div>
+    <button onclick="goBack()" class="back-button">Назад</button>
+  </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        function goBack() {
+      window.history.back();
+    }
+      function showImage(image) {
+        // Отображение выбранного изображения
+      }
+
+      function zoomIn(element) {
+        // Увеличение изображения при наведении
+        element.style.transform = "scale(1.2)";
+      }
+
+      function zoomOut(element) {
+        // Уменьшение изображения при уходе мыши с него
+        element.style.transform = "scale(1)";
+      }
+    </script>
+  </body>
+</html>

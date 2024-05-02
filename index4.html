@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style2.css">
+    <script src="script/3.js"></script>
+    <title>Брюки</title>
+</head>
+<body>
+    <ul>
+  <li><a href="index.html">Главная</a></li>
+  <li class="dropdown">
+    <button class="dropbtn">Мужская одежда</button>
+    <div class="dropdown-content">
+      <a href="index2.html">Футболки</a>
+      <a href="index3.html">Рубашки</a>
+      <a href="index4.html">Брюки</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <button class="dropbtn">Женская одежда</button>
+    <div class="dropdown-content">
+      <a href="index5.html">Платья</a>
+      <a href="index6.html">Юбки</a>
+      <a href="index7.html">Блузки</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <button class="dropbtn">Детская одежда</button>
+    <div class="dropdown-content">
+      <a href="index8.html">Детские куртки</a>
+      
+    </div>
+  </li>
+    <li><a href="index11.html">Обратная связь </a></li>
+    <nav class="right-align">
+        <div class="cart-login-registration">
+            <li><button onclick="openLoginForm()"><img src="images/35.png" height="23px" width="23px" alt=""></button></li>
+            <li><button onclick="openRegistrationForm()"><img src="images/5.png" height="23px" width="23px" alt=""></button></li>
+            <li><button onclick="openCart()"><img src="images/4.png" height="23px" width="23px" alt=""></button></li>
+        </div>
+    </nav>
+ <!-- Форма Входа -->
+<div id="loginForm" class="form-popup">
+  <form class="form-container">
+    <h2>Форма входа</h2>
+    <input type="text" placeholder="Логин" required>
+    <input type="password" placeholder="Пароль" required>
+    <button type="submit" class="btn">Войти</button>
+    <button type="button" class="btn cancel" onclick="closeLoginForm()">Закрыть</button>
+  </form>
+</div>
+
+<!-- Форма Регистрации -->
+<div id="registrationForm" class="form-popup">
+  <form class="form-container">
+    <h2>Форма регистрации</h2>
+    <input type="email" placeholder="Email" required>
+    <input type="text" placeholder="Логин" required>
+    <input type="password" placeholder="Пароль" required>
+    <input type="tel" placeholder="Номер телефона" required>
+    <button type="submit" class="btn">Зарегистрироваться</button>
+    <button type="button" class="btn cancel" onclick="closeRegistrationForm()">Закрыть</button>
+  </form>
+</div>
+
+<!-- Корзина -->
+<div id="cart" class="form-popup">
+  <div class="cart-container">
+    <h2>Корзина</h2>
+    <ul id="cartList"></ul>
+    <!-- Здесь будут отображаться товары -->
+    <p id="total"></p>
+    <div class="total"> <span id="totalAmount">0</span> </div>
+    <button type="button" class="btn cancel" onclick="closeCart()">Закрыть</button>
+  </div>
+</div>
+</ul>
+   </ul>
+    <div id="gallery">
+      <a href="#" onclick="openFile()"><img id="image" src="images/7.jpg"  ></a> <!-- Добавляем onclick с вызовом функции openFile() -->
+    </div>
+    <div class="button-container">
+      <button onclick="previousImage()" class="button"><</button>
+      <button onclick="nextImage()" class="button">></button>
+       <button  onclick="addToCart()" class="button">Добавить в корзину</button>
+
+
+    </div>    
+  </div>
+
+  <script>
+   
+  </script>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Контакты</h3>
+            <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+            <p>Email: info@example.com</p>
+            <p>Адрес: ул. Примерная, д. 123, офис 456</p>
+        </div>
+        <div class="footer-column">
+            <h3>Ссылки</h3>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                
+                <li><a href="index11.html">обратная связь </a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Подписка</h3>
+            <p>Подпишитесь на нашу рассылку, чтобы получать обновления о новых товарах и акциях.</p>
+            <form>
+                <input type="email" placeholder="Введите ваш email">
+                <button type="submit">Подписаться</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Магазин одежды. Все права защищены.</p>
+    </div>
+</footer>
+
+
+<script>
+// JavaScript для открытия и закрытия выпадающего меню
+document.addEventListener("DOMContentLoaded", function(event) { 
+    var dropdowns = document.getElementsByClassName("dropdown");
+    var i;
+
+    for (i = 0; i < dropdowns.length; i++) {
+        dropdowns[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.getElementsByClassName("dropdown-content")[0];
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    }
+});
+</script>
+
+</body>
+</html>
+</body>
+</html>

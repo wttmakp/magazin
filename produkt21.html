@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карточка товара</title>
+    <link rel="stylesheet" href="style/stylepr.css" />
+  </head>
+  <body>
+    <div class="product-card">
+      <div class="product-images">
+        <img
+          src="images/2.1.jpg"
+          alt="Image 1"
+          class="thumbnail"
+          onclick="showImage('images/4.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        <img
+          src="images/211.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="showImage('images/41.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        <img
+          src="images/212.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="showImage('images/42.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        
+      </div>
+      <div class="product-info">
+        <h1>Цена: 1000 р.</h1>
+        <h1>Куртка утепленная демисезонная для мальчика</h1>
+        <p> Куртка с утеплителем нового поколения. Рекомендованный температурный режим от -5 до -25. Мембранная ткань 5000/5000 покрыта тефлоновой пропиткой, отталкивающей воду и грязь, обладает "дышащими" свойствами и гарантирует идеальный воздухообмен. Лёгкий утеплитель сохраняет тепло, позволяет активно двигаться, не сковывая движений. Несъемный капюшон. Утяжка на капюшоне со стопперами. 
+        </p><div class="reviews">
+          <h2>Отзывы:</h2>
+          <ul>
+            <li><h5>Марина</h5>
+            <p>Очень теплая, хорошая куртка. На рост 86 взяли размер 9. Надеемся что и осень проходим тоже.
+            </p></li>
+            <li><h5>Покупатель</h5>
+            <p>Хорошая курточка</p></li>
+           <li><h5>Покупатель</h5>
+            <p>Куртка мягкая, теплая. Ткань хорошо отстирывается, наполнитель не скомкался. Носим в погоду от 0 до +10, но до -5 без ветра тоже пойдет. На рост 82 сидит с хорошим запасом. Достойная куртка за свои деньги.</p></li>
+          </ul>
+        </div>
+        <div class="add-review">
+          <h2>Оставить отзыв:</h2>
+          <form>
+            <textarea placeholder="Введите ваш отзыв здесь"></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+          </div>
+    <button onclick="goBack()" class="back-button">Назад</button>
+  </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        function goBack() {
+      window.history.back();
+    }
+      function showImage(image) {
+        // Отображение выбранного изображения
+      }
+
+      function zoomIn(element) {
+        // Увеличение изображения при наведении
+        element.style.transform = "scale(1.2)";
+      }
+
+      function zoomOut(element) {
+        // Уменьшение изображения при уходе мыши с него
+        element.style.transform = "scale(1)";
+      }
+    </script>
+  </body>
+</html>

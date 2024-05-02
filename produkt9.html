@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карточка товара</title>
+    <link rel="stylesheet" href="style/stylepr.css" />
+  </head>
+  <body>
+    <div class="product-card">
+      <div class="product-images">
+        <img
+          src="images/9.jpg"
+          alt="Image 1"
+          class="thumbnail"
+          onclick="showImage('images/9.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        <img
+          src="images/91.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="showImage('images/91.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        <img
+          src="images/92.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="showImage('images/92.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        
+      </div>
+      <div class="product-info">
+        <h1>Цена: 1600 р.</h1>
+        <h1>Брюки широкие на кнопках</h1>
+        <p>Предлагаем Вашему вниманию стильные oversize штаны . Эти свободные штаны с карманами подходят как для девушки так и для парня . Дед инсайд подросток будет рад такому подарку как брюки в корейском стиле ведь эти мешковатые брюки y2k необычная коллекция 2024 года тренд тик-тока и любовь всей молодежи . Черные трубы с разрезами можно использовать в повседневной носке ,они сочетаются под разные образы их можно носить дома , на улице , в школе и в универе .</p>
+        <div class="reviews">
+          <h2>Отзывы:</h2>
+          <ul>
+            <li><h5>Марина</h5>
+            <p>ПСыну понравились. Всё подошло</p></li>
+            <li><h5>Покупатель</h5>
+            <p>ТУ сына рост 176см,заказала М.....брюки у него выше щиколотки .....</p></li>
+           <li><h5>Покупатель</h5>
+            <p>штаны хорошие! деньги за возврат не отправляют</p></li>
+          </ul>
+        </div>
+        <div class="add-review">
+          <h2>Оставить отзыв:</h2>
+          <form>
+            <textarea placeholder="Введите ваш отзыв здесь"></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+          </div>
+    <button onclick="goBack()" class="back-button">Назад</button>
+  </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        function goBack() {
+      window.history.back();
+    }
+      function showImage(image) {
+        // Отображение выбранного изображения
+      }
+
+      function zoomIn(element) {
+        // Увеличение изображения при наведении
+        element.style.transform = "scale(1.2)";
+      }
+
+      function zoomOut(element) {
+        // Уменьшение изображения при уходе мыши с него
+        element.style.transform = "scale(1)";
+      }
+    </script>
+  </body>
+</html>

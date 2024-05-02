@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карточка товара</title>
+    <link rel="stylesheet" href="style/stylepr.css" />
+  </head>
+  <body>
+    <div class="product-card">
+      <div class="product-images">
+        <img
+          src="images/1.1.jpg"
+          alt="Image 1"
+          class="thumbnail"
+          onclick="showImage('images/1.1.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        <img
+          src="images/111.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="showImage('images/111.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        <img
+          src="images/112.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="showImage('images/112.jpg')"
+          onmouseover="zoomIn(this)"
+          onmouseout="zoomOut(this)"
+        />
+        
+      </div>
+      <div class="product-info">
+        <h1>Цена: 720 р.</h1>
+        <h1>Платье женское вечернее нарядное</h1>
+        <p> Это настоящая жемчужина в мире моды - платье, которое идеально подходит для любого особого случая. Его удивительная красота и элегантность не оставят равнодушной ни одну женщину. Если у тебя на горизонте выпускной или очаровательная вечеринка, то это платье вечернее будет прекрасным выбором. Оно обладает уникальным сочетанием рубчика и облегающего покроя, что придает ему неповторимый шарм и делает его идеальным для особых моментов.
+        </p><div class="reviews">
+          <h2>Отзывы:</h2>
+          <ul>
+            <li><h5>Марина</h5>
+            <p>Платье очень понравилось ❤️
+            </p></li>
+            <li><h5>Покупатель</h5>
+            <p>Изумительные платье. Подчёркивает фигуру. Идёт в разм.</p></li>
+           <li><h5>Покупатель</h5>
+            <p>Мне очень нрав платье. Теплое, удобное, приятное к телу. Единственный минут к ткани все липнет</p></li>
+          </ul>
+        </div>
+        <div class="add-review">
+          <h2>Оставить отзыв:</h2>
+          <form>
+            <textarea placeholder="Введите ваш отзыв здесь"></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+          </div>
+    <button onclick="goBack()" class="back-button">Назад</button>
+  </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        function goBack() {
+      window.history.back();
+    }
+      function showImage(image) {
+        // Отображение выбранного изображения
+      }
+
+      function zoomIn(element) {
+        // Увеличение изображения при наведении
+        element.style.transform = "scale(1.2)";
+      }
+
+      function zoomOut(element) {
+        // Уменьшение изображения при уходе мыши с него
+        element.style.transform = "scale(1)";
+      }
+    </script>
+  </body>
+</html>

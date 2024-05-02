@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style1.css">
+    <script src="script/js.js"></script>
+    <title>Главная </title>
+</head>
+<body>
+    <ul>
+  <li><a href="index.html">Главная</a></li>
+  <li class="dropdown">
+    <button class="dropbtn">Мужская одежда</button>
+    <div class="dropdown-content">
+      <a href="index2.html">Футболки</a>
+      <a href="index3.html">Рубашки</a>
+      <a href="index4.html">Брюки</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <button class="dropbtn">Женская одежда</button>
+    <div class="dropdown-content">
+      <a href="index5.html">Платья</a>
+      <a href="index6.html">Юбки</a>
+      <a href="index7.html">Блузки</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <button class="dropbtn">Детская одежда</button>
+    <div class="dropdown-content">
+      <a href="index8.html">Детские куртки</a>
+      
+    </div>
+  </li>
+    <li><a href="index11.html">Обратная связь </a></li>
+    <nav class="right-align">
+        <div class="cart-login-registration">
+            <li><button onclick="openLoginForm()"><img src="images/35.png" height="23px" width="23px" alt=""></button></li>
+            <li><button onclick="openRegistrationForm()"><img src="images/5.png" height="23px" width="23px" alt=""></button></li>
+            <li><button onclick="openCart()"><img src="images/4.png" height="23px" width="23px" alt=""></button></li>
+        </div>
+    </nav>
+ <!-- Форма Входа -->
+<div id="loginForm" class="form-popup">
+  <form class="form-container">
+    <h2>Форма входа</h2>
+    <input type="text" placeholder="Логин" required>
+    <input type="password" placeholder="Пароль" required>
+    <button type="submit" class="btn">Войти</button>
+    <button type="button" class="btn cancel" onclick="closeLoginForm()">Закрыть</button>
+  </form>
+</div>
+
+<!-- Форма Регистрации -->
+<div id="registrationForm" class="form-popup">
+  <form class="form-container">
+    <h2>Форма регистрации</h2>
+    <input type="email" placeholder="Email" required>
+    <input type="text" placeholder="Логин" required>
+    <input type="password" placeholder="Пароль" required>
+    <input type="tel" placeholder="Номер телефона" required>
+    <button type="submit" class="btn">Зарегистрироваться</button>
+    <button type="button" class="btn cancel" onclick="closeRegistrationForm()">Закрыть</button>
+  </form>
+</div>
+
+<!-- Корзина -->
+<div id="cart" class="form-popup">
+  <div class="cart-container">
+    <h2>Корзина</h2>
+    <ul id="cartList"></ul>
+    <!-- Здесь будут отображаться товары -->
+    <p id="total"></p>
+    <div class="total"> <span id="totalAmount">0</span> </div>
+    <button type="button" class="btn cancel" onclick="closeCart()">Закрыть</button>
+  </div>
+</div>
+</ul>
+   </ul>
+    </div>    
+  </div>
+ <form action="" class="postcard">
+<div class="form-row">
+<label for="name">Ваше имя</label><input type="text" id="name" required>
+</div>
+<div class="form-row">
+<label for="email">Ваш Email</label><input type="email" id="email" required>
+</div>
+<div class="form-row">
+<label for="message">Ваше сообщение</label><textarea rows="5" id="message" required></textarea>
+</div>
+<div class="form-row">
+<input type="submit" value="Отправить сообщение">
+</div>
+</form>
+<style>* {
+   box-sizing: border-box;
+}
+body {
+   background: #25252444;
+}
+.postcard {
+   max-width: 350px;
+   margin: 50px auto 0;
+   padding: 20px;
+   background: #fffdee;
+   border: 10px solid transparent;
+   border-image: 10 repeating-linear-gradient(135deg, #000000, #ffffff 10px, transparent 10px, transparent 20px, #666364da 20px, #252424a6 30px, transparent 30px, transparent 40px);
+   font-family: 'Playfair Display';
+   color: #605756;
+}
+.form-row {
+   margin-bottom: 15px;
+}
+.form-row input[type="text"], .form-row input[type="email"], .form-row textarea {
+   width: 100%;
+   padding: 0 10px;
+   line-height: 35px;
+   border-width: 0;
+   outline: none;
+   background: transparent url() bottom left repeat-x;
+   background-size: 8px 35px;
+   font-family: 'Playfair Display';
+}
+.form-row textarea {
+   background-attachment: local;
+   background-repeat: repeat;
+   resize: none;
+}
+.form-row input[type="submit"] {
+   padding: 10px 20px;
+   margin-top: 10px;
+   background: #000000;
+   border-width: 0;
+   cursor: pointer;
+   outline: none;
+   font-family: 'Playfair Display';
+   font-size: 13px;
+   letter-spacing: 1px;
+   color: #fffdee;
+   text-transform: uppercase;
+   transition: 1s cubic-bezier(.165, .84, .44, 1);
+}
+.form-row input[type=submit]:hover {
+   background: #C42061;
+}</style>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Контакты</h3>
+            <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+            <p>Email: info@example.com</p>
+            <p>Адрес: ул. Примерная, д. 123, офис 456</p>
+        </div>
+        <div class="footer-column">
+            <h3>Ссылки</h3>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                
+                <li><a href="index11.html">обратная связь </a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Подписка</h3>
+            <p>Подпишитесь на нашу рассылку, чтобы получать обновления о новых товарах и акциях.</p>
+            <form>
+                <input type="email" placeholder="Введите ваш email">
+                <button type="submit">Подписаться</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Магазин одежды. Все права защищены.</p>
+    </div>
+</footer>
+
+
+<script>
+// JavaScript для открытия и закрытия выпадающего меню
+document.addEventListener("DOMContentLoaded", function(event) { 
+    var dropdowns = document.getElementsByClassName("dropdown");
+    var i;
+
+    for (i = 0; i < dropdowns.length; i++) {
+        dropdowns[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.getElementsByClassName("dropdown-content")[0];
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    }
+});
+</script>
+
+</body>
+</html>
+</body>
+</html>
